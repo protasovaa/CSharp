@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.csprojAssemblyReference.cache
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.Form1.resources
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.Properties.Resources.resources
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.csproj.GenerateResource.cache
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\bin\Debug\lab1sharpSasha.exe.config
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\bin\Debug\lab1sharpSasha.exe
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\bin\Debug\lab1sharpSasha.pdb
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.exe
+C:\Users\User\source\repos\lab1sharpSasha\lab1sharpSasha\obj\Debug\lab1sharpSasha.pdb
