@@ -1,0 +1,6 @@
+D:\visual studio progect\Лабы_C#\labsharp\YearModel\bin\Debug\YearModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\YearModel\bin\Debug\YearModel.pdb
+D:\visual studio progect\Лабы_C#\labsharp\YearModel\obj\Debug\YearModel.csproj.AssemblyReference.cache
+D:\visual studio progect\Лабы_C#\labsharp\YearModel\obj\Debug\YearModel.csproj.CoreCompileInputs.cache
+D:\visual studio progect\Лабы_C#\labsharp\YearModel\obj\Debug\YearModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\YearModel\obj\Debug\YearModel.pdb

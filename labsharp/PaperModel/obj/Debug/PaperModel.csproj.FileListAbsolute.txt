@@ -1,0 +1,5 @@
+D:\visual studio progect\Лабы_C#\labsharp\PaperModel\obj\Debug\PaperModel.csproj.CoreCompileInputs.cache
+D:\visual studio progect\Лабы_C#\labsharp\PaperModel\bin\Debug\PaperModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\PaperModel\bin\Debug\PaperModel.pdb
+D:\visual studio progect\Лабы_C#\labsharp\PaperModel\obj\Debug\PaperModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\PaperModel\obj\Debug\PaperModel.pdb

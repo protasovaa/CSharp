@@ -1,0 +1,13 @@
+D:\visual studio progect\Лабы_C#\labsharp\YearView\bin\Debug\YearView.exe.config
+D:\visual studio progect\Лабы_C#\labsharp\YearView\bin\Debug\YearView.exe
+D:\visual studio progect\Лабы_C#\labsharp\YearView\bin\Debug\YearView.pdb
+D:\visual studio progect\Лабы_C#\labsharp\YearView\bin\Debug\YearModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\YearView\bin\Debug\YearModel.pdb
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\lab1sharpSasha.Form1.resources
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.Properties.Resources.resources
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.csproj.GenerateResource.cache
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.csproj.CoreCompileInputs.cache
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.csproj.CopyComplete
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.exe
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.pdb
+D:\visual studio progect\Лабы_C#\labsharp\YearView\obj\Debug\YearView.csproj.AssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\visual studio progect\Лабы_C#\labsharp\CarView\obj\Debug\CarView.csproj.AssemblyReference.cache
+D:\visual studio progect\Лабы_C#\labsharp\CarView\obj\Debug\CarModel.Form1.resources
+D:\visual studio progect\Лабы_C#\labsharp\CarView\obj\Debug\CarView.Properties.Resources.resources
+D:\visual studio progect\Лабы_C#\labsharp\CarView\obj\Debug\CarView.csproj.GenerateResource.cache
+D:\visual studio progect\Лабы_C#\labsharp\CarView\obj\Debug\CarView.csproj.CoreCompileInputs.cache

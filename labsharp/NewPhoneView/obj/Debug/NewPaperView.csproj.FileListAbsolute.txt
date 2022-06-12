@@ -1,0 +1,14 @@
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\bin\Debug\NewPhoneView.exe.config
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\bin\Debug\NewPhoneView.exe
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\bin\Debug\NewPhoneView.pdb
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\lab4csharp.Read.resources
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\lab4csharp.Main.resources
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPhoneView.Properties.Resources.resources
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPaperView.csproj.GenerateResource.cache
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPaperView.csproj.CoreCompileInputs.cache
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPaperView.csproj.CopyComplete
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPhoneView.exe
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPhoneView.pdb
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\bin\Debug\NewPaperModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\bin\Debug\NewPaperModel.pdb
+D:\visual studio progect\Лабы_C#\labsharp\NewPhoneView\obj\Debug\NewPaperView.csproj.AssemblyReference.cache
