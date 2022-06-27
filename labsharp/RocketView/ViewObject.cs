@@ -7,19 +7,13 @@ using System.Drawing;
 using RocketModel;
 namespace RocketView
 {
-    // класс для рисования объектов
-    // хранит изборажение и координаты отрисовки
-    // хранит коордианыт центра фигуры
     class ViewObject
     {
-        // коордианты объекта
-        // virtual чтобы ViewModel : ViewObject давал коордианты модели
         public virtual float X { get; set; }
         public virtual float Y { get; set; }
 
         public Image Image { get; set; }
 
-        // по типу модели определим изображение и описание
         public ViewObject(Image image)
         {
             this.Image = image;

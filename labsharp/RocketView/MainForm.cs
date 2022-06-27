@@ -15,38 +15,28 @@ namespace RocketView
 {
     public partial class MainForm : Form
     {
-        // список объектов
         List<ViewObject> viewObjects;
         object viewObjectsLocker;
 
         List<ViewModel> viewModels;
         object viewModelsLocker;
 
-        // рисователь всех объектов
         Painter painter;
 
-        //здания на карте
 
         ViewObject insurance, gym;
 
-        // космонавты
         List<Astronaut> astronaut;
         object astronautsLocker;
 
-        // соревнования
         List<Launch> launch;
-
-        // запуски будут только в в левой части экрана находиться
 
         int maxCompetitionsNumber;
 
         IEnumerable<Type> paymantTypes;
 
-        // будем хранить все уведомления, чтобы их постепенно очищать
         List<string> notifications;
 
-        // картинки моделей
-        // лучше сделать ссылки на них, так проще будет изменять код при изменении картинок
         Image astronautImage,
             moneyImage,
             homeImage,
@@ -55,10 +45,6 @@ namespace RocketView
 
         private TextBox notificationTextBox;
         private PictureBox pictureBox;
-        //private ToolStripMenuItem StartToolStripMenuItem;
-        //private ToolStripMenuItem AddAstronautToolStripMenuItem;
-        //private ToolStripMenuItem AddRocketToolStripMenuItem;
-        //private ToolStripMenuItem AddMoneyToolStripMenuItem;
 
         public MainForm()
         {
@@ -102,7 +88,6 @@ namespace RocketView
 
                 if (notifications.Count >= 15)
                 {
-                    // clear
                     notifications = notifications.GetRange(5, 9);
 
                     notificationTextBox.Text = "";
@@ -119,7 +104,6 @@ namespace RocketView
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // закрываем все задачи
 
             painter.Stop();
 
@@ -137,7 +121,6 @@ namespace RocketView
 
         void InputPersonModel(PersonModel personModel)
         {
-            // input firstName, lastName
 
             InputStringDialog inputLastName = new InputStringDialog(new WordValidator(), "Введите Фамилию");
 
@@ -160,7 +143,6 @@ namespace RocketView
 
             InputPersonModel(newAstronaut);
 
-            // add to list and add to view
 
             lock (astronautsLocker)
             {
@@ -172,7 +154,6 @@ namespace RocketView
                 viewModels.Add(new ViewModel(newAstronaut, astronautImage));
             }
 
-            // запустим космонавта
             Task.Run(newAstronaut.Start);
         }
 
@@ -201,13 +182,9 @@ namespace RocketView
         }
         void SetBuildingsSize()
         {
-            // задаём центры зданий в завимости от размеров pictureBox и картинок
-
-            // больница будет в левом верхнем углу
             insurance.X = pictureBox.Width - insuranceImage.Width / 2;
             insurance.Y = insuranceImage.Height / 2;
 
-            // тренажёрный зал будет в правом нижнем углу
 
             gym.X = pictureBox.Width - homeImage.Width / 2;
             gym.Y = pictureBox.Height - homeImage.Height / 2;
@@ -257,7 +234,6 @@ namespace RocketView
 
         void GenerateAstronauts(int astronautsNumber)
         {
-            // создадим несколько космонавтов, выплат, запусков, запустим их в потоках
 
             for (int i = 0; i < astronautsNumber; i++)
             {
@@ -310,14 +286,12 @@ namespace RocketView
                new Font(notificationTextBox.Font.FontFamily, 10f, notificationTextBox.Font.Style),
                viewObjects, viewObjectsLocker, viewModels, viewModelsLocker);
 
-            // create buildings
 
             insurance = new ViewObject(insuranceImage);
             gym = new ViewObject(homeImage);
 
             SetBuildingsSize();
 
-            // add hospital, stadium, gym
             viewObjects.Add(insurance);
             viewObjects.Add(gym);
 
@@ -330,22 +304,5 @@ namespace RocketView
             painter.Start();
         }
 
-        //private void addCompatitionToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    InputStringDialog inputCompettionName = new InputStringDialog(new WordValidator(), "Введите имя сор");
-
-        //    string name = "";
-
-        //    if (inputCompettionName.ShowDialog() == DialogResult.OK)
-        //        name = inputCompettionName.Value;
-
-        //    InputStringDialog inputMaxParticipatingSportmansNumber = new InputStringDialog(new NotNegativeIntValidator(),
-        //        "Введите максимальное количество спортсменов на соревновании");
-
-        //    if (inputMaxParticipatingSportmansNumber.ShowDialog() == DialogResult.OK)
-        //        AddRocket(name, Int32.Parse(inputMaxParticipatingSportmansNumber.Value));
-        //    else
-        //        AddRocket(name, 3);
-        //}
     }
 }

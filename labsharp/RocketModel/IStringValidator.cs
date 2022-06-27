@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace RocketModel
 {
-    // интерфейс для валидаторов строки
     public interface IStringValidator
     {
         bool IsValid(string str);
 
-        // сообщение об ошибке, задаём почему строка невалидна
         string ErrorMessage { get; }
     }
 }

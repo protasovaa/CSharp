@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace RocketModel
 {
-    // интерфейс страховой
     interface IIncurance
     {
-        // список случаев, за которые выплачивается компенсация
         List<int> HealDiseaseIndexes { get; }
     }
 }

@@ -9,13 +9,10 @@ using RocketModel;
 
 namespace RocketView
 {
-    // класс который будет всё рисовать
     class Painter
     {
-        // picture box куда будем выводить изображение
         private readonly PictureBox pictureBox;
 
-        // в bitmap будем рисовать и потом картинку выводить в pictureBox
         Bitmap bitmap;
 
         List<ViewObject> viewObjects;
@@ -28,7 +25,6 @@ namespace RocketView
         private readonly Color backgroundColor;
         private readonly Font textFont;
 
-        // будет рисовать с каждыи тиком таймера
         System.Windows.Forms.Timer timer;
 
         public Painter(PictureBox pictureBox, Color backgroundColor, Font textFont,
@@ -53,7 +49,6 @@ namespace RocketView
             {
                 graphics.Clear(backgroundColor);
 
-                // в начале рисуем здания, чтобы они не закрывали модели
                 lock (viewObjectsLocker)
                 {
                     foreach (var item in viewObjects)
@@ -76,7 +71,6 @@ namespace RocketView
 
         void Draw(ViewObject viewObject)
         {
-            // так как ViewObject хранит координаты центра, то координаты отрисовки определим по размерам картинки
 
             graphics.DrawImage(viewObject.Image,
                 viewObject.X - viewObject.Image.Width / 2, viewObject.Y - viewObject.Image.Height / 2);

@@ -7,17 +7,12 @@ using System.Threading.Tasks;
 
 namespace RocketModel
 {
-    // класс соревнование
-    // этот класс будет отвечать когда организоывать соревнование
-    // этот класс будет тыкать свободных спорстменов прийти на него
 
     public class Launch : Model
     {
-        // список спростменов и заглшука для него
         private readonly List<Astronaut> astronauts;
         private readonly object sportsmansLocker;
 
-        // участвующие в соревновпании спростмены
         List<Astronaut> participatingAstronauts;
 
         string Name { get; }
@@ -40,7 +35,6 @@ namespace RocketModel
             this.maxParticipatingAstronautsNumber = maxParticipatingSportmansNumber;
         }
 
-        // возвращеатбыль ли запуск
         bool StartLaunch()
         {
             participatingAstronauts.Clear();
@@ -51,10 +45,8 @@ namespace RocketModel
 
                 for (int i = 0; i < astronauts.Count && participatingAstronautsNumber < maxParticipatingAstronautsNumber; i++)
                 {
-                    // если не заблокирован
                     if (!astronauts[i].IsLocked)
                     {
-                        // назначем куда идти
                         astronauts[i].ToX = X;
                         astronauts[i].ToY = Y;
 
@@ -92,8 +84,6 @@ namespace RocketModel
 
             Notification($"Запуск {Name} начинается");
             Notification($"Запуск {Name} благополучно прошел");
-
-            // видимость путешествия(типо сколько-то длится)
             Task.Delay(10 * 1000).Wait();
         }
 
@@ -102,7 +92,6 @@ namespace RocketModel
             Notification($"{place} вышел в открытый космос {astronaut.LastName} {astronaut.FirstName}");
         }
 
-        // получить следующего 
         int getNextAstronaut(Random random, int participatingAstronautsNumber, List<int> space)
         {
             int result;
@@ -116,7 +105,6 @@ namespace RocketModel
             return result;
         }
 
-        // return 
         List<int> DetermineSpace()
         {
             List<int> space = new List<int>();
@@ -126,7 +114,6 @@ namespace RocketModel
 
             Notification($"Космонавт {Name} выходит в открытый космос");
 
-            // 1 просто рандомный из всего кол-ва
             Random random = new Random();
 
             int firstSportsman = getNextAstronaut(random, participatingAstronauts.Count, space);
@@ -145,7 +132,7 @@ namespace RocketModel
             if (participatingAstronauts.Count == 2)
                 return space;
 
-            // 3
+            
             int thirdSportsman = getNextAstronaut(random, participatingAstronauts.Count, space);
             space.Add(thirdSportsman);
 
@@ -253,7 +240,6 @@ namespace RocketModel
                     EndLaunch();   
                 }
 
-                // интервал времени между соревнованиями
                 Task.Delay(5 * 1000).Wait();
             }
         }

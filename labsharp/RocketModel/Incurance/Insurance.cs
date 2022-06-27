@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace RocketModel
 {
-    // в этом классе опредлется общее для всех докторов - идти лечит
     public abstract class Insurance : PersonModel, IIncurance
     {
-        // список космонавтов, которые просматриваем и локер для него
         private readonly List<Astronaut> astronauts;
         private readonly object astronautsLocker;
-
-        // ссылка на пострадавших
+        
         Astronaut sickAstronaut;
 
         public Insurance(Action<string> Notification, float defaultX, float defaultY, List<Astronaut> astronauts, object astronautsLocker)
@@ -25,11 +22,8 @@ namespace RocketModel
             this.astronautsLocker = astronautsLocker;
         }
 
-        // нужный список аварий
         public List<int> HealDiseaseIndexes { get; }
 
-        // выплата
-        // проверят дошёл до цели
         void Heal()
         {
             if (IsCome())
@@ -42,7 +36,6 @@ namespace RocketModel
                 sickAstronaut.IsIll = false;
                 sickAstronaut.IsLocked = false;
 
-                //страховая ничего не делает
                 DoSomething = null;
                 IsLocked = false;
 
@@ -52,7 +45,6 @@ namespace RocketModel
             }
         }
 
-        // провекрка
         protected override void CheckEvents()
         {
             if (IsLocked)
@@ -60,14 +52,12 @@ namespace RocketModel
 
             lock(astronautsLocker)
             {
-                // если была авария и индекс аварии такой же
                 sickAstronaut = astronauts.FirstOrDefault(sportsman => sportsman.IsIll &&
                     HealDiseaseIndexes.Contains(sportsman.DiseaseIndex)
                     && !sportsman.WaitHeal);
 
                 if (sickAstronaut != null)
                 {
-                    // сразу пометим, что он ждёт выплату, чтобы другие страховые компании не участововали 
                     sickAstronaut.WaitHeal = true;
                     ToX = sickAstronaut.X;
                     ToY = sickAstronaut.Y;

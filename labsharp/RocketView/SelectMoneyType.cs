@@ -33,13 +33,11 @@ namespace RocketView
 
         private void SelectDoctorType_Load(object sender, EventArgs e)
         {
-            // fill combo box
             selectMoneyComboBox.Items.AddRange(paymantTypes.Select(type => type.Name).ToArray());
         }
 
         private void agreeButton_Click(object sender, EventArgs e)
         {
-            // кнопка доступна только при выборе, поэтому можно сразу закрыть
             if (SelectedType == null)
                 MessageBox.Show("Вы не выбрали тип выплат");
             else

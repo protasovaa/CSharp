@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace RocketModel
 {
-    // так как соревнование будет само тыкать сопросменов, а врач сам к ним идти
-    // то спортсмен не особо что-то делает, но будет возвращаться на своё место
     public class Astronaut : PersonModel
     {
         public bool IsIll { get; internal set; }
@@ -24,8 +22,7 @@ namespace RocketModel
 
         public void RandomSick(Random random)
         {   
-            // 30% заболеть
-            // 0..9  в сумме 10
+            
             if (random.Next(0, 10) < 3)
             {
                 DiseaseIndex = random.Next(0, Disease.AllDisease.Length);
@@ -34,7 +31,6 @@ namespace RocketModel
             }
         }
 
-        // будет проверять занят или нет, если нет, то будет задавать отчку возвращения
         protected override void CheckEvents()
         {
             if (!IsLocked)

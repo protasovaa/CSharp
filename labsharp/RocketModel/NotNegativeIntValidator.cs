@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace RocketModel
 {
-    // валидатор, что целое неотрицательное число
     public class NotNegativeIntValidator : IStringValidator
     {
-        // число типа int => используем при этом валидатор на int
         IntValidator intValid = new IntValidator();
 
         public string ErrorMessage { get; private set; }
@@ -18,14 +16,12 @@ namespace RocketModel
         {
             bool isInt = intValid.IsValid(str);
 
-            // не число, сразу выход
             if (!isInt)
             {
                 ErrorMessage = intValid.ErrorMessage;
                 return false;
             }
 
-            // теперь проверим что не отрицательный
             bool isValid = Int32.Parse(str) >= 0;
 
             if (!isValid)

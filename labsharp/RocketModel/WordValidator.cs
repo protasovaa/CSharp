@@ -18,7 +18,6 @@ namespace RocketModel
                 return false;
             }
 
-            // пройдёмся и проверим, что все символы - буквы
 
             foreach (char c in word)
                 if (!Char.IsLetter(c))
