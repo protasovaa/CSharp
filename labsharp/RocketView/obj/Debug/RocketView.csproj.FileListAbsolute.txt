@@ -1,0 +1,14 @@
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.Properties.Resources.resources
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.csproj.GenerateResource.cache
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.csproj.CoreCompileInputs.cache
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.InputStringDialog.resources
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.MainForm.resources
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\bin\Debug\RocketView.exe
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\bin\Debug\RocketView.pdb
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\bin\Debug\RocketModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\bin\Debug\RocketModel.pdb
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.csproj.CopyComplete
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.exe
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.pdb
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.SelectMoneyType.resources
+D:\visual studio progect\Лабы_C#\labsharp\RocketView\obj\Debug\RocketView.csproj.AssemblyReference.cache

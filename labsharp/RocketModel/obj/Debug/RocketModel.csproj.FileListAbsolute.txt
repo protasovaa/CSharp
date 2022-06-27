@@ -1,0 +1,5 @@
+D:\visual studio progect\Лабы_C#\labsharp\RocketModel\bin\Debug\RocketModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\RocketModel\bin\Debug\RocketModel.pdb
+D:\visual studio progect\Лабы_C#\labsharp\RocketModel\obj\Debug\RocketModel.csproj.CoreCompileInputs.cache
+D:\visual studio progect\Лабы_C#\labsharp\RocketModel\obj\Debug\RocketModel.dll
+D:\visual studio progect\Лабы_C#\labsharp\RocketModel\obj\Debug\RocketModel.pdb
